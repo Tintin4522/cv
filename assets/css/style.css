@@ -1,50 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+@font-face {
+    font-family: "raleway";
+    src: url(../police/Raleway.woff);
+    src: url(../police/Raleway.ttf) format('truetype');
+}
+
 * {
+    font-family: "raleway";
     width: 1160px;
     margin: auto;
 }
 
-nav {
+header nav {
     display: flex;
     justify-content: space-between;
     background-color: #2c1d27;
     height: 120px;
+    color: white;
 }
-
-main {
-    background-color: #782221;
-    }
 
 header {
     background-color: #782221;
     text-align: center;
 }
 
-#container {
-    display: grid;
-    grid-template-columns: repeat(2,3fr);
-    grid-template-rows: repeat(1,1fr);
-    gap: 0px;
-    justify-content: center;
-}
-
 #container_left {
     display: flex;
     flex-direction: column;
-    float: left;
-    grid-column: 1 / span 3;
-    grid-row: 1 / span 1;
+    justify-content: space-around;
     background-color: #782221;
 }
 
 #container_right {
-    float: right;
-    grid-column: 2 / span 3;
-    grid-row: 1 / span 1;
     background-color: white;
-}
-
-main {
-    overflow-wrap: nowrap;
 }
 
 h1 {
@@ -62,6 +51,10 @@ figure {
     height: 150px;
     text-align: center;
     }
+
+figure a:hover {
+    cursor: zoom-in;
+}
 
 header img {
     border-radius: 50%;
@@ -84,4 +77,31 @@ footer img {
 
 footer div {
     align-items: center;
+}
+
+footer div a:hover{
+    opacity: 0.5;
+}
+
+h2 {
+    background-color: #dbc2a4 ;
+    font-family: "lato", serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50% ;
+    gap: 0px;
+    max-width: 1160px;
+    background-color: #782221;
+}
+
+#indentation {
+    text-indent: 50px;
+}
+
+#deco {
+    text-decoration: none;
+    color: white;
 }
