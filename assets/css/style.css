@@ -3,6 +3,16 @@
     margin: auto;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2c1d27;
+    height: 120px;
+}
+
+main {
+    background-color: #782221;
+    }
 
 header {
     background-color: #782221;
@@ -18,12 +28,12 @@ header {
 }
 
 #container_left {
+    display: flex;
+    flex-direction: column;
     float: left;
     grid-column: 1 / span 3;
     grid-row: 1 / span 1;
     background-color: #782221;
-    height: 100%;
-    width: 1fr;
 }
 
 #container_right {
@@ -34,7 +44,7 @@ header {
 }
 
 main {
-    overflow-wrap: normal;
+    overflow-wrap: nowrap;
 }
 
 h1 {
